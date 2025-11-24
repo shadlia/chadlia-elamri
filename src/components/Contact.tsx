@@ -17,8 +17,8 @@ export const Contact = () => {
     {
       icon: Linkedin,
       label: t('contact.linkedin'),
-      value: "linkedin.com/in/shadlia-el-amri",
-      href: "https://linkedin.com/in/shadlia-el-amri"
+      value: "linkedin.com/in/shadlia-el-amri-aa97211b4",
+      href: "https://www.linkedin.com/in/shadlia-el-amri-aa97211b4/"
     },
     {
       icon: Github,

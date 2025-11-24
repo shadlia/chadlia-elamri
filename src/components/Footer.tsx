@@ -18,7 +18,7 @@ export const Footer = () => {
           
           <div className="flex items-center gap-4">
             <a 
-              href="https://linkedin.com/in/shadlia-el-amri" 
+              href="https://www.linkedin.com/in/shadlia-el-amri-aa97211b4/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
