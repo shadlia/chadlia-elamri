@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import profileImg from "@/assets/profile.png";
+import profileImgNoBackground from "@/assets/pic-no-bg.png";
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -29,7 +30,7 @@ export const Hero = () => {
           >
             <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full overflow-hidden glass glow ring-4 ring-primary/30">
               <img 
-                src={profileImg} 
+                src={profileImgNoBackground} 
                 alt={t('hero.name')}
                 className="w-full h-full object-cover"
               />
