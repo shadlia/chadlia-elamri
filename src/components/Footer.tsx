@@ -28,8 +28,6 @@ export const Footer = () => {
             </a>
             <a 
               href="https://github.com/shadlia" 
-              target="_blank" 
-              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="GitHub"
             >

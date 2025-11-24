@@ -8,6 +8,8 @@ import NotFound from "./pages/NotFound";
 
 import { Chatbot } from "@/components/Chatbot";
 import { NeuralBackground } from "@/components/NeuralBackground";
+import { Terminal } from "@/components/Terminal";
+import { TerminalHint } from "@/components/TerminalHint";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +20,8 @@ const App = () => (
       <Sonner />
       <NeuralBackground />
       <Chatbot />
+      <Terminal />
+      <TerminalHint />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
