@@ -7,6 +7,11 @@ export default defineConfig({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: [
+      "chadlia-elamri.onrender.com",
+      "localhost",
+      ".onrender.com"
+    ],
   },
   plugins: [react()],
   resolve: {
