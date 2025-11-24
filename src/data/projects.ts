@@ -60,6 +60,21 @@ export const projects = [
     githubUrl: "#"
   },
   {
+    id: "smartoffers",
+    titleKey: 'projects.smartoffers.title',
+    descriptionKey: 'projects.smartoffers.description',
+    categories: ["Full Stack", "AI"],
+    tech: ["Next.js", "TypeScript", "GraphQL", "PostgreSQL", "Web Scraping"],
+    featuresKeys: [
+      'projects.smartoffers.feature1',
+      'projects.smartoffers.feature2',
+      'projects.smartoffers.feature3',
+      'projects.smartoffers.feature4'
+    ],
+    demoUrl: "#",
+    githubUrl: "#"
+  },
+  {
     id: "anomaly",
     titleKey: 'projects.anomaly.title',
     descriptionKey: 'projects.anomaly.description',

@@ -78,6 +78,14 @@ export const en = {
       feature3: "PostgreSQL with indexing",
       feature4: "25% engagement boost",
     },
+    smartoffers: {
+      title: "Smart Offers",
+      description: "Offer negotiation platform replacing Google Sheets workflows. Enables companies and brand partners to scrape products, edit offers, and negotiate in real-time with automated validation and mobile app publishing.",
+      feature1: "Universal product scraping (Shopify & custom sites)",
+      feature2: "Dual-validation workflow (company + brand)",
+      feature3: "Real-time offer editing interface",
+      feature4: "Automated mobile app publishing",
+    },
     anomaly: {
       title: "Anomaly Detection",
       description: "Machine learning system to identify anomalies in fences using surveillance footage with CNNs and transfer learning.",
