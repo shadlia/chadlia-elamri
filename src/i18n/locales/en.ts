@@ -1,14 +1,14 @@
 export const en = {
   hero: {
     name: "Chadlia El Amri",
-    title: "AI Engineer & Backend Developer",
+    title: "AI Engineer & Full Stack Developer",
     subtitle: "Building intelligent systems with LLMs, scalable APIs, and automation",
     cta1: "View Projects",
     cta2: "Contact Me",
   },
   about: {
     title: "About Me",
-    description1: "AI & Software Engineer with expertise in backend development, API design, and LLM-powered systems. Graduated in October 2025 with an engineering degree and built production-ready applications during internships in Paris and Tunisia. I specialize in creating robust, scalable backend architectures that power intelligent AI solutions.",
+    description1: "AI & Software Engineer with expertise in full stack development, API design, and LLM-powered systems. Graduated in October 2025 with an engineering degree and built production-ready applications during internships in Paris and Tunisia. I specialize in creating robust, scalable backend architectures that power intelligent AI solutions.",
     description2: "I transform complex problems into elegant solutions using modern frameworks, cloud technologies, and cutting-edge AI tools.",
     stat1: "3+ Years Experience",
     stat2: "10+ Projects Built",

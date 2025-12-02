@@ -28,7 +28,7 @@ export const CustomCursor = () => {
     <>
       {/* Main cursor - small dot */}
       <motion.div
-        className="fixed pointer-events-none z-[9999]"
+        className="fixed pointer-events-none z-[10000]"
         style={{
           width: '4px',
           height: '4px',

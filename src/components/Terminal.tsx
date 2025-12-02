@@ -72,7 +72,7 @@ export const Terminal = () => {
     whoami: () => [
       "Chadlia El Amri",
       "",
-      "AI Engineer & Backend Developer",
+      "AI Engineer & Full Stack Developer",
       "",
       "🎓 Engineering degree in Software Engineering (Oct 2025)",
       "🌍 International experience: Tunisia → Netherlands → Paris",
@@ -184,7 +184,7 @@ export const Terminal = () => {
       "📍 Location: Sousse, Tunisia 🇹🇳",
       "",
       "I'm actively seeking opportunities as an AI Engineer",
-      "or Backend Developer. Let's build something amazing! ✨"
+      "or Full Stack Developer. Let's build something amazing! ✨"
     ],
     clear: () => [],
     exit: () => ["Goodbye! 👋"]

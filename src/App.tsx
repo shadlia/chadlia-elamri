@@ -4,12 +4,14 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import ProjectDemo from "./pages/ProjectDemo";
 import NotFound from "./pages/NotFound";
 
 import { Chatbot } from "@/components/Chatbot";
 import { NeuralBackground } from "@/components/NeuralBackground";
 import { Terminal } from "@/components/Terminal";
 import { TerminalHint } from "@/components/TerminalHint";
+import { CustomCursor } from "@/components/CustomCursor";
 
 const queryClient = new QueryClient();
 
@@ -19,12 +21,14 @@ const App = () => (
       <Toaster />
       <Sonner />
       <NeuralBackground />
+      <CustomCursor />
       <Chatbot />
       <Terminal />
       <TerminalHint />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/demo/:id" element={<ProjectDemo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
