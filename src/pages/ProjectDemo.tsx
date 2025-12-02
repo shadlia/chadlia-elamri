@@ -51,16 +51,25 @@ const ProjectDemo = () => {
               {/* Main Media Player */}
               <div className="aspect-video bg-black relative">
                 {currentMedia.type === 'video' ? (
-                  <video
-                    src={currentMedia.url}
-                    controls
-                    autoPlay
-                    className="w-full h-full object-contain"
-                  />
+                  currentMedia.url.includes('drive.google.com') ? (
+                    <iframe
+                      src={currentMedia.url}
+                      className="w-full h-full"
+                      allow="autoplay"
+                      style={{ border: 'none' }}
+                    />
+                  ) : (
+                    <video
+                      src={currentMedia.url}
+                      controls
+                      autoPlay
+                      className="w-full h-full object-contain"
+                    />
+                  )
                 ) : (
                   <img
                     src={currentMedia.url}
-                    alt={project.titleKey} // Using key as alt for now, ideally translated
+                    alt={project.titleKey}
                     className="w-full h-full object-contain"
                   />
                 )}

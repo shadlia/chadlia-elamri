@@ -34,12 +34,12 @@ export const projects: Project[] = [
     media: [
       {
         type: 'video',
-        url: '/src/assets/demos/scrapllm/scrap llm.mp4',
-        label: 'Main Process'
+        url: 'https://drive.google.com/file/d/1sjn5ra1Lo0u0-8n1uADBndOGfipgUFyQ/preview',
+        label: 'Main Application'
       },
       {
         type: 'video',
-        url: '/src/assets/demos/scrapllm/demo-benchmark.mp4',
+        url: 'https://drive.google.com/file/d/1Awrw0R0zPvftdgHWcsfSKkG70wIVKOG1/preview',
         label: 'Benchmark Module'
       }
     ]
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     media: [
       {
         type: 'video',
-        url: '/src/assets/demos/ragassistant/demo.mp4',
+        url: 'https://drive.google.com/file/d/1-6UXcF13sdJdgHLoMEK24E-0rsFi4s-3/preview',
         label: 'RAG Assistant Demo'
       }
     ]
@@ -85,12 +85,12 @@ export const projects: Project[] = [
     media: [
       {
         type: 'image',
-        url: '/src/assets/demos/rss/main.jpg',
+        url: 'https://drive.google.com/thumbnail?id=1vf79uywp5WYbdzmlMhVuzEkZnRUUI3lb&sz=w1000',
         label: 'Main Interface'
       },
       {
         type: 'image',
-        url: '/src/assets/demos/rss/final.jpg',
+        url: 'https://drive.google.com/thumbnail?id=1WXrWKSfEWUaE6s1tkEDH6WnqkhZE7KTh&sz=w1000',
         label: 'Final Result'
       }
     ]
@@ -111,14 +111,14 @@ export const projects: Project[] = [
     githubUrl: "#",
     isPrivate: true,
     media: [
-      { type: 'image', url: '/src/assets/demos/foodswap/main.jpg', label: 'Home' },
-      { type: 'image', url: '/src/assets/demos/foodswap/createroom.jpg', label: 'Create Room' },
-      { type: 'image', url: '/src/assets/demos/foodswap/joining.jpg', label: 'Join Room' },
-      { type: 'image', url: '/src/assets/demos/foodswap/starting.jpg', label: 'Lobby' },
-      { type: 'image', url: '/src/assets/demos/foodswap/voting.jpg', label: 'Voting' },
-      { type: 'image', url: '/src/assets/demos/foodswap/waiting for result.jpg', label: 'Waiting' },
-      { type: 'image', url: '/src/assets/demos/foodswap/final result.jpg', label: 'Result' },
-      { type: 'image', url: '/src/assets/demos/foodswap/contact.jpg', label: 'Contact' }
+      { type: 'image', url: 'https://drive.google.com/thumbnail?id=1wUcuQM7y7mUjeA59BhMop2PSh0KPIsAJ&sz=w1000', label: 'Home' },
+      { type: 'image', url: 'https://drive.google.com/thumbnail?id=1unQfTDLvZ4_Ie7q81oM7uLGdM90--l2i&sz=w1000', label: 'Create Room' },
+      { type: 'image', url: 'https://drive.google.com/thumbnail?id=1XDYmm8QBb9CCDE6El3uPBcbkr-7HGdJV&sz=w1000', label: 'Join Room' },
+      { type: 'image', url: 'https://drive.google.com/thumbnail?id=1aPD7Rq6DlU877ivNslik1ZcI5QSoHD6V&sz=w1000', label: 'Lobby' },
+      { type: 'image', url: 'https://drive.google.com/thumbnail?id=1h2Ouf9m3B7hmZX8PKF1iv7Kz1KWKtouo&sz=w1000', label: 'Voting' },
+      { type: 'image', url: 'https://drive.google.com/thumbnail?id=1UPd7GXXd99xKw6NWRkmwi2J2ohEB1ukn&sz=w1000', label: 'Waiting' },
+      { type: 'image', url: 'https://drive.google.com/thumbnail?id=1p2ZbF9As0vVkunQWtSRvKNShhRf8zgiu&sz=w1000', label: 'Result' },
+      { type: 'image', url: 'https://drive.google.com/thumbnail?id=1h0Y53dZKsQwMV7i7afMeyNER5jY2Gz4b&sz=w1000', label: 'Contact' }
     ]
   },
   // {

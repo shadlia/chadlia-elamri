@@ -2,14 +2,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Lock, ChevronLeft, ChevronRight } from "lucide-react";
+import { ExternalLink, Github, Lock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { projects } from "@/data/projects";
 import { useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { ProjectModal } from "@/components/ProjectModal";
 
 export const Projects = () => {
   const { t } = useTranslation();
+  const [selectedProject, setSelectedProject] = useState<any>(null);
 
   // Helper to map the data structure to the component's expected format
   const projectList = projects.map(p => ({
@@ -58,18 +59,24 @@ export const Projects = () => {
           viewport={{ once: true, margin: "-100px" }}
         >
           {projectList.map((project) => (
-            <ProjectCard key={project.id} project={project} t={t} />
+            <ProjectCard key={project.id} project={project} t={t} onOpenModal={() => setSelectedProject(project)} />
           ))}
         </motion.div>
       </div>
+
+      {/* Project Modal */}
+      <ProjectModal 
+        project={selectedProject} 
+        isOpen={!!selectedProject} 
+        onClose={() => setSelectedProject(null)} 
+      />
     </section>
   );
 };
 
-const ProjectCard = ({ project, t }: { project: any, t: any }) => {
+const ProjectCard = ({ project, t, onOpenModal }: { project: any, t: any, onOpenModal: () => void }) => {
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const navigate = useNavigate();
 
   const currentMedia = project.media[0]; // Use first media for preview
 
@@ -89,7 +96,7 @@ const ProjectCard = ({ project, t }: { project: any, t: any }) => {
   };
 
   const handleClick = () => {
-    window.open(`/demo/${project.id}`, '_blank');
+    onOpenModal();
   };
 
   return (
@@ -116,14 +123,23 @@ const ProjectCard = ({ project, t }: { project: any, t: any }) => {
         >
           <div className="absolute inset-0 w-full h-full">
             {currentMedia.type === 'video' ? (
-              <video
-                ref={videoRef}
-                src={currentMedia.url}
-                className="w-full h-full object-cover"
-                muted
-                loop
-                playsInline
-              />
+              currentMedia.url.includes('drive.google.com') ? (
+                <iframe
+                  src={currentMedia.url}
+                  className="w-full h-full object-cover"
+                  allow="autoplay"
+                  style={{ border: 'none' }}
+                />
+              ) : (
+                <video
+                  ref={videoRef}
+                  src={currentMedia.url}
+                  className="w-full h-full object-cover"
+                  muted
+                  loop
+                  playsInline
+                />
+              )
             ) : (
               <img 
                 src={currentMedia.url} 
