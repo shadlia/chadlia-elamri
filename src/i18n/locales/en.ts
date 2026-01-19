@@ -94,6 +94,14 @@ export const en = {
       feature3: "Hyperparameter optimization",
       feature4: "Computer vision pipeline",
     },
+    'linkedin-classifier': {
+      title: "Linkedin Classifier",
+      description: "AI-powered tool to scrape and classify LinkedIn profiles using LLMs (Gemini). It provides confidence scores and detailed analytics to assist recruiters in candidate screening.",
+      feature1: "LLM-based classification",
+      feature2: "Streamlit Interface",
+      feature3: "Automated Scraping",
+      feature4: "Human-in-the-loop Validation",
+    },
   },
   experience: {
     title: "Professional Journey",

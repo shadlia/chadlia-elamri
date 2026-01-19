@@ -94,6 +94,14 @@ export const fr = {
       feature3: "Optimisation des hyperparamètres",
       feature4: "Pipeline de vision par ordinateur",
     },
+    'linkedin-classifier': {
+      title: "Classificateur LinkedIn",
+      description: "Outil alimenté par l'IA pour scraper et classifier les profils LinkedIn avec Gemini. Il fournit des scores de confiance et des analyses pour aider les recruteurs.",
+      feature1: "Classification basée sur LLM",
+      feature2: "Interface Streamlit",
+      feature3: "Scraping automatisé",
+      feature4: "Validation avec humain dans la boucle",
+    },
   },
   experience: {
     title: "Parcours Professionnel",

@@ -17,6 +17,29 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "linkedin-classifier",
+    titleKey: 'projects.linkedin-classifier.title',
+    descriptionKey: 'projects.linkedin-classifier.description',
+    categories: ["AI", "Full Stack"],
+    tech: ["Python", "Streamlit", "Langfuse", "Gemini API", "Playwright"],
+    featuresKeys: [
+      'projects.linkedin-classifier.feature1',
+      'projects.linkedin-classifier.feature2',
+      'projects.linkedin-classifier.feature3',
+      'projects.linkedin-classifier.feature4'
+    ],
+    demoUrl: "https://drive.google.com/file/d/1oUPMixzs2mhg8Y0Ai3VrV4Y3hC9e7fHa/preview",
+    githubUrl: "https://github.com/shadlia/linkedin-classifier",
+    isPrivate: false,
+    media: [
+      {
+        type: 'video',
+        url: 'https://drive.google.com/file/d/1oUPMixzs2mhg8Y0Ai3VrV4Y3hC9e7fHa/preview',
+        label: 'Demo'
+      }
+    ]
+  },
+  {
     id: "scrapllm",
     titleKey: 'projects.scrapllm.title',
     descriptionKey: 'projects.scrapllm.description',
