@@ -69,7 +69,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
                     )}
                     
                     {currentMedia.type === 'video' ? (
-                      currentMedia.url.includes('drive.google.com') ? (
+                      (currentMedia.url.includes('drive.google.com') || currentMedia.url.includes('loom.com')) ? (
                         <iframe
                           src={currentMedia.url}
                           className="w-full h-full"

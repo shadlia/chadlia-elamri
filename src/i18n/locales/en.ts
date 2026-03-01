@@ -102,6 +102,14 @@ export const en = {
       feature3: "Automated Scraping",
       feature4: "Human-in-the-loop Validation",
     },
+    smartcalendar: {
+      title: "Smart Calendar",
+      description: "Real-time, zero-latency voice assistant that interacts conversationally to schedule meetings and automatically create live events on Google Calendar.",
+      feature1: "Zero-Latency Voice Architecture (Web Speech API)",
+      feature2: "Stateful Conversational AI (LangGraph)",
+      feature3: "Secure Google Calendar Integration (OAuth 2.0)",
+      feature4: "Robust Prompt Engineering for JSON extraction",
+    },
   },
   experience: {
     title: "Professional Journey",

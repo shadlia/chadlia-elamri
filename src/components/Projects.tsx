@@ -123,7 +123,7 @@ const ProjectCard = ({ project, t, onOpenModal }: { project: any, t: any, onOpen
         >
           <div className="absolute inset-0 w-full h-full">
             {currentMedia.type === 'video' ? (
-              currentMedia.url.includes('drive.google.com') ? (
+              (currentMedia.url.includes('drive.google.com') || currentMedia.url.includes('loom.com')) ? (
                 <iframe
                   src={currentMedia.url}
                   className="w-full h-full object-cover"

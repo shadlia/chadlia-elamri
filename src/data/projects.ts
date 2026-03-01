@@ -17,6 +17,29 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "smartcalendar",
+    titleKey: 'projects.smartcalendar.title',
+    descriptionKey: 'projects.smartcalendar.description',
+    categories: ["AI", "Full Stack"],
+    tech: ["React", "FastAPI", "Python", "LangGraph", "Gemini 2.5", "Google Calendar API"],
+    featuresKeys: [
+      'projects.smartcalendar.feature1',
+      'projects.smartcalendar.feature2',
+      'projects.smartcalendar.feature3',
+      'projects.smartcalendar.feature4'
+    ],
+    demoUrl: "https://www.loom.com/share/5e2a1456e693415bb46985f7bbad1f71",
+    githubUrl: "https://github.com/shadlia/scheduling-agent",
+    isPrivate: false,
+    media: [
+      {
+        type: 'video',
+        url: 'https://www.loom.com/embed/5e2a1456e693415bb46985f7bbad1f71?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true',
+        label: 'Demo'
+      }
+    ]
+  },
+  {
     id: "linkedin-classifier",
     titleKey: 'projects.linkedin-classifier.title',
     descriptionKey: 'projects.linkedin-classifier.description',

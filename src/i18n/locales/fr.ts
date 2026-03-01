@@ -102,6 +102,14 @@ export const fr = {
       feature3: "Scraping automatisé",
       feature4: "Validation avec humain dans la boucle",
     },
+    smartcalendar: {
+      title: "Smart Calendar",
+      description: "Assistant vocal en temps réel et sans latence qui interagit de manière conversationnelle pour planifier des réunions et créer automatiquement des événements en direct sur Google Calendar.",
+      feature1: "Architecture vocale sans latence (Web Speech API)",
+      feature2: "IA conversationnelle avec états (LangGraph)",
+      feature3: "Intégration Google Calendar sécurisée (OAuth 2.0)",
+      feature4: "Ingénierie de prompt robuste pour l'extraction JSON",
+    },
   },
   experience: {
     title: "Parcours Professionnel",
