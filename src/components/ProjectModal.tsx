@@ -171,12 +171,22 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
                   <div className="flex gap-3 pt-4 border-t border-border/50">
                     <Button
                       className="flex-1"
+                      variant={project.liveUrl ? "secondary" : "default"}
                       size="sm"
                       onClick={() => window.open(project.demoUrl, '_blank')}
                       disabled={project.demoUrl === '#'}
                     >
                       <ExternalLink className="mr-2 h-3 w-3" /> Demo
                     </Button>
+                    {project.liveUrl && (
+                      <Button
+                        className="flex-1"
+                        size="sm"
+                        onClick={() => window.open(project.liveUrl, '_blank')}
+                      >
+                        <ExternalLink className="mr-2 h-3 w-3" /> Live App
+                      </Button>
+                    )}
                     <Button
                       variant="outline"
                       size="sm"

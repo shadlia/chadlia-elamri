@@ -212,27 +212,43 @@ const ProjectCard = ({ project, t, onOpenModal }: { project: any, t: any, onOpen
           </div>
 
           {/* Actions Footer */}
-          <div className="mt-auto pt-3 border-t border-border/30 flex items-center justify-between gap-4">
-            <span className="text-xs text-muted-foreground flex items-center gap-2">
-              <ExternalLink className="w-3 h-3" />
-              {isHovered ? "Click video for demo" : "Hover to preview"}
+          <div className="mt-auto pt-3 border-t border-border/30 flex items-center justify-between gap-2">
+            <span className="text-xs text-muted-foreground flex items-center gap-1.5 truncate hide-on-mobile sm:flex">
+              <ExternalLink className="w-3 h-3 flex-shrink-0" />
+              <span className="truncate">{isHovered ? "Click video for demo" : "Hover to preview"}</span>
             </span>
 
-            {/* Direct Code Button - Always clickable in this section */}
-            {!project.isPrivate && (
-              <Button
-                variant="outline"
-                size="sm"
-                className="h-8 text-xs gap-1.5 hover:bg-secondary/20 z-30 relative"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  window.open(project.githubUrl, '_blank');
-                }}
-              >
-                <Github className="w-3.5 h-3.5" />
-                Code
-              </Button>
-            )}
+            <div className="flex gap-2 ml-auto">
+              {project.liveUrl && (
+                <Button
+                  variant="default"
+                  size="sm"
+                  className="h-8 text-[10px] sm:text-xs gap-1.5 z-30 relative px-2.5"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(project.liveUrl, '_blank');
+                  }}
+                >
+                  <ExternalLink className="w-3 h-3" />
+                  Live App
+                </Button>
+              )}
+              {/* Direct Code Button - Always clickable in this section */}
+              {!project.isPrivate && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="h-8 text-[10px] sm:text-xs gap-1.5 hover:bg-secondary/20 z-30 relative px-2.5"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(project.githubUrl, '_blank');
+                  }}
+                >
+                  <Github className="w-3.5 h-3.5" />
+                  Code
+                </Button>
+              )}
+            </div>
           </div>
         </motion.div>
         

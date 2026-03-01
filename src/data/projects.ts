@@ -6,6 +6,7 @@ export interface Project {
   tech: string[];
   featuresKeys: string[];
   demoUrl: string;
+  liveUrl?: string;
   githubUrl: string;
   isPrivate: boolean;
   media: {
@@ -29,6 +30,7 @@ export const projects: Project[] = [
       'projects.smartcalendar.feature4'
     ],
     demoUrl: "https://www.loom.com/share/5e2a1456e693415bb46985f7bbad1f71",
+    liveUrl: "https://scheduling-agent-ashy.vercel.app/",
     githubUrl: "https://github.com/shadlia/scheduling-agent",
     isPrivate: false,
     media: [
