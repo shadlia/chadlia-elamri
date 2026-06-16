@@ -1,19 +1,19 @@
 export const en = {
   hero: {
     name: "Chadlia El Amri",
-    title: "AI Engineer & Full Stack Developer",
-    subtitle: "Building intelligent systems with LLMs, scalable APIs, and automation",
+    title: "AI Product Engineer",
+    subtitle: "Building user-centric products powered by LLMs, scalable APIs, and smart automation",
     cta1: "View Projects",
     cta2: "Contact Me",
   },
   about: {
     title: "About Me",
-    description1: "AI & Software Engineer with expertise in full stack development, API design, and LLM-powered systems. Graduated in October 2025 with an engineering degree and built production-ready applications during internships in Paris and Tunisia. I specialize in creating robust, scalable backend architectures that power intelligent AI solutions.",
-    description2: "I transform complex problems into elegant solutions using modern frameworks, cloud technologies, and cutting-edge AI tools.",
+    description1: "AI Product Engineer with expertise in shipping user-first applications, robust backend architectures, and LLM-powered systems. Graduated in October 2025 with an engineering degree, I specialize in translating complex requirements into reliable product increments, bridging the gap between advanced AI capability and production-ready software.",
+    description2: "I thrive at the intersection of product design and engineering reliability, using modern frameworks to build stable, release-ready systems.",
     stat1: "3+ Years Experience",
     stat2: "10+ Projects Built",
-    stat3: "5 Positions",
-    statLabel3: "Paris, Netherlands & Tunisia",
+    stat3: "6 Positions",
+    statLabel3: "Vienna, Paris, Netherlands & Tunisia",
   },
   education: {
     title: "Education",
@@ -113,6 +113,16 @@ export const en = {
   },
   experience: {
     title: "Professional Journey",
+    patholux: {
+      position: "Product Engineer",
+      company: "Patholux",
+      location: "Vienna, Austria (Remote)",
+      duration: "Mar 2026 - Present",
+      achievement1: "Built 15+ production features in Patholux, a digital pathology platform used by labs to manage case workflows from intake to diagnosis and reporting",
+      achievement2: "Implemented automated workflows to reduce manual effort and improve operational consistency in daily lab processes",
+      achievement3: "Shipped full-stack product increments end-to-end, translating product requirements into stable, release-ready functionality in a fast-moving monorepo",
+      achievement4: "Implemented high-reliability backend logic for critical healthcare workflows, with strong focus on correctness, traceability, and tenant-safe data handling",
+    },
     choose: {
       position: "Software Engineer Intern",
       company: "Choose",
@@ -167,7 +177,7 @@ export const en = {
   },
   contact: {
     title: "Let's Connect",
-    subtitle: "I'm actively seeking opportunities as an AI Engineer or Backend Developer. Let's build something amazing together! ✨",
+    subtitle: "I'm actively seeking opportunities as an AI Product Engineer. Let's build something amazing together! ✨",
     email: "Email",
     linkedin: "LinkedIn",
     github: "GitHub",

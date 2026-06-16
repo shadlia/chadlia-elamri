@@ -10,6 +10,22 @@ export const Experience = () => {
   
   const experiences = [
     {
+      position: t('experience.patholux.position'),
+      company: t('experience.patholux.company'),
+      location: t('experience.patholux.location'),
+      duration: t('experience.patholux.duration'),
+      country: "Austria",
+      flag: "🇦🇹",
+      city: "Vienna (Remote)",
+      technologies: ["React 19", "TanStack Start", "TypeScript", "Bun", "Hono", "tRPC", "Drizzle ORM", "PostgreSQL", "Tailwind CSS", "Turborepo", "Docker"],
+      achievements: [
+        t('experience.patholux.achievement1'),
+        t('experience.patholux.achievement2'),
+        t('experience.patholux.achievement3'),
+        t('experience.patholux.achievement4')
+      ]
+    },
+    {
       position: t('experience.choose.position'),
       company: t('experience.choose.company'),
       location: t('experience.choose.location'),
@@ -17,6 +33,7 @@ export const Experience = () => {
       country: "France",
       flag: "🇫🇷",
       city: "Paris",
+      technologies: ["LangChain", "Langfuse", "Google SDK", "Python", "GCP", "Cloud Run", "CI/CD", "Web Scraping", "Domain-Driven Design"],
       achievements: [
         t('experience.choose.achievement1'),
         t('experience.choose.achievement2'),
@@ -33,6 +50,7 @@ export const Experience = () => {
       country: "Netherlands",
       flag: "🇳🇱",
       city: "Remote",
+      technologies: ["React", "LLMs", "TTS", "TypeScript", "AI Integration"],
       achievements: [
         t('experience.niron.achievement1'),
         t('experience.niron.achievement2'),
@@ -48,6 +66,7 @@ export const Experience = () => {
       country: "Tunisia",
       flag: "🇹🇳",
       city: "Sousse",
+      technologies: ["LangChain", "LlamaIndex", "LLMs", "Python", "Prompt Engineering"],
       achievements: [
         t('experience.latech.achievement1'),
         t('experience.latech.achievement2'),
@@ -63,6 +82,7 @@ export const Experience = () => {
       country: "Tunisia",
       flag: "🇹🇳",
       city: "Sousse",
+      technologies: ["React", "NestJS", "PostgreSQL", "TypeScript"],
       achievements: [
         t('experience.latech2.achievement1'),
         t('experience.latech2.achievement2'),
@@ -78,6 +98,7 @@ export const Experience = () => {
       country: "Tunisia",
       flag: "🇹🇳",
       city: "Sousse",
+      technologies: ["Python", "Deep Learning", "CNN", "ResNet50", "Computer Vision"],
       achievements: [
         t('experience.issatso.achievement1'),
         t('experience.issatso.achievement2'),
@@ -181,6 +202,20 @@ export const Experience = () => {
                           <span className="text-sm">{exp.duration}</span>
                         </div>
                       </div>
+
+                      {/* Tech Stack */}
+                      {exp.technologies && (
+                        <div className="flex flex-wrap gap-1.5 mb-4">
+                          {exp.technologies.map((tech) => (
+                            <span 
+                              key={tech} 
+                              className="text-[11px] font-medium bg-primary/10 text-primary border border-primary/20 px-2 py-0.5 rounded hover:bg-primary/20 transition-colors"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      )}
 
                       {/* Achievements */}
                       <motion.div

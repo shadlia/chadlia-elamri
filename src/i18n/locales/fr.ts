@@ -1,19 +1,19 @@
 export const fr = {
   hero: {
     name: "Chadlia El Amri",
-    title: "Ingénieure IA & Développeuse Backend",
-    subtitle: "Création de systèmes intelligents avec LLMs, APIs évolutives et automatisation",
+    title: "Product Engineer (IA & Full Stack)",
+    subtitle: "Création de produits centrés utilisateur propulsés par les LLM, des API évolutives et l'automatisation",
     cta1: "Voir les Projets",
     cta2: "Me Contacter",
   },
   about: {
     title: "À Propos",
-    description1: "Ingénieure en IA et logiciels avec expertise en développement backend, conception d'API et systèmes alimentés par LLM. Diplômée en octobre 2025 et ayant développé des applications prêtes pour la production lors de stages à Paris et en Tunisie. Je me spécialise dans la création d'architectures backend robustes et évolutives qui alimentent des solutions IA intelligentes.",
-    description2: "Je transforme des problèmes complexes en solutions élégantes en utilisant des frameworks modernes, des technologies cloud et des outils IA de pointe.",
+    description1: "Ingénieure produit IA spécialisée dans le déploiement d'applications centrées utilisateur, d'architectures backend robustes et de systèmes alimentés par LLM. Diplômée en octobre 2025, je traduis des exigences complexes en incréments de produits fiables, alliant capacités IA avancées et logiciels stables prêts pour la production.",
+    description2: "Je m'épanouis à l'intersection de la conception de produits et de la fiabilité de l'ingénierie, en utilisant des frameworks modernes pour créer des systèmes stables et prêts pour la production.",
     stat1: "3+ Ans d'Expérience",
     stat2: "10+ Projets Réalisés",
-    stat3: "5 Postes",
-    statLabel3: "Paris, Pays-Bas & Tunisie",
+    stat3: "6 Postes",
+    statLabel3: "Vienne, Paris, Pays-Bas & Tunisie",
   },
   education: {
     title: "Éducation",
@@ -113,6 +113,16 @@ export const fr = {
   },
   experience: {
     title: "Parcours Professionnel",
+    patholux: {
+      position: "Product Engineer",
+      company: "Patholux",
+      location: "Vienne, Autriche (Remote)",
+      duration: "Mars 2026 - Présent",
+      achievement1: "Développé plus de 15 fonctionnalités en production dans Patholux, une plateforme de pathologie numérique utilisée par les laboratoires pour gérer les flux de dossiers, de l'admission au diagnostic et aux rapports",
+      achievement2: "Mis en œuvre des workflows automatisés pour réduire l'effort manuel et améliorer la cohérence opérationnelle dans les processus quotidiens des laboratoires",
+      achievement3: "Livré des incréments de produit full-stack de bout en bout, traduisant les exigences produit en fonctionnalités stables prêtes pour la production dans un monorepo dynamique",
+      achievement4: "Implémenté une logique backend hautement fiable pour les flux de travail critiques du secteur de la santé, avec un accent particulier sur la correction, la traçabilité et la gestion des données multi-locataires sécurisée (tenant-safe)",
+    },
     choose: {
       position: "Stagiaire Ingénieure Logicielle",
       company: "Choose",
@@ -167,7 +177,7 @@ export const fr = {
   },
   contact: {
     title: "Connectons-nous",
-    subtitle: "Je recherche activement des opportunités en tant qu'Ingénieure IA ou Développeuse Backend. Construisons quelque chose d'incroyable ensemble ! ✨",
+    subtitle: "Je recherche activement des opportunités en tant que Product Engineer IA. Construisons quelque chose d'incroyable ensemble ! ✨",
     email: "Email",
     linkedin: "LinkedIn",
     github: "GitHub",

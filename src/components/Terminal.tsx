@@ -72,11 +72,11 @@ export const Terminal = () => {
     whoami: () => [
       "Chadlia El Amri",
       "",
-      "AI Engineer & Full Stack Developer",
+      "AI Product Engineer",
       "",
       "🎓 Engineering degree in Software Engineering (Oct 2025)",
-      "🌍 International experience: Tunisia → Netherlands → Paris",
-      "💼 Specialized in LLMs, RAG systems, and scalable APIs",
+      "🌍 International experience: Tunisia → Netherlands → Paris → Vienna",
+      "💼 Specialized in product engineering, LLMs, and scalable backend",
       "🚀 Building intelligent systems with cutting-edge AI tools",
       "",
       "Type 'contact' for ways to reach me!"
@@ -137,6 +137,12 @@ export const Terminal = () => {
     experience: () => [
       "Professional Journey:",
       "",
+      "🇦🇹 Product Engineer @ Patholux (Vienna Remote)",
+      "   Mar 2026 - Present",
+      "   • Built 15+ production features for case workflows",
+      "   • Implemented automated daily lab workflows",
+      "   • Tech: React 19, Hono, tRPC, Drizzle, PostgreSQL, Docker",
+      "",
       "🇫🇷 Software Engineer Intern @ Choose (Paris)",
       "   Feb 2025 - Aug 2025",
       "   • Built AI automation tools (70% error reduction)",
@@ -183,8 +189,8 @@ export const Terminal = () => {
       "🐙 GitHub: github.com/chadlia-elamri",
       "📍 Location: Sousse, Tunisia 🇹🇳",
       "",
-      "I'm actively seeking opportunities as an AI Engineer",
-      "or Full Stack Developer. Let's build something amazing! ✨"
+      "I'm actively seeking opportunities as an AI Product Engineer.",
+      "Let's build something amazing! ✨"
     ],
     clear: () => [],
     exit: () => ["Goodbye! 👋"]
